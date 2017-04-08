@@ -48,7 +48,6 @@ class ViewController: UIViewController {
         scene.rootNode.addChildNode(camerNode)
         
         //createLight
-        
         scene.rootNode.addChildNode(createTheLight())
         scene.rootNode.addChildNode(createTheLight2())
         scene.rootNode.addChildNode(createTheLight3())
