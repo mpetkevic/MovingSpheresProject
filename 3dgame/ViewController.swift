@@ -120,15 +120,16 @@ class ViewController: UIViewController {
         node.addAnimation(animation, forKey: "radius")
     }
 
-//    func animationPosition(_ node: SCNNode) {
-//        let animation = CABasicAnimation(keyPath: "transform.scale.x")
-//        animation.fromValue = 0.0
-//        animation.toValue = 10.0
-//        animation.duration = 10.0
-//        animation.autoreverses = true
-//        animation.repeatCount = .infinity
-//        node.addAnimation(animation, forKey: "position")
-//    }
+    func animationPosition(_ node: SCNNode) {
+        //let animation = CABasicAnimation(keyPath: "geometry.transform.scale.x")
+        let animation = CABasicAnimation(keyPath: "position.x")
+        animation.fromValue = 0.0
+        animation.toValue = 10.0
+        animation.duration = 10.0
+        animation.autoreverses = true
+        animation.repeatCount = .infinity
+        node.addAnimation(animation, forKey: "x")
+    }
 
 //    func animationColor(_ node: SCNNode) {
 //        let animation = CABasicAnimation(keyPath: "backgroundColor")
@@ -201,8 +202,8 @@ class ViewController: UIViewController {
         redMaterial.diffuse.contents = UIImage(named: "earth-topo.png")
         sphereGeometry.materials = [redMaterial]
         sphereNode.position = SCNVector3(x: -1.0, y: 1.0, z: 1.0)
-        animationRadius(sphereNode)
-        //animationPosition(sphereNode)
+        //animationRadius(sphereNode)
+        animationPosition(sphereNode)
      //   animationColor(sphereNode)
                return sphereNode
     }
@@ -213,7 +214,9 @@ class ViewController: UIViewController {
         let yellowMaterial = SCNMaterial()
         yellowMaterial.diffuse.contents = UIImage(named: "germany_round_icon_640.png")
         sphereGeometry.materials = [yellowMaterial]
-        animationRadius2(sphereNode)
+        
+        sphereNode.position.x = 10
+        //animationRadius2(sphereNode)
         //animationPosition(sphereNode)
         return sphereNode
     }
@@ -225,7 +228,7 @@ class ViewController: UIViewController {
         greenMaterial.diffuse.contents = UIImage(named: "italy_round_icon_640.png")
         sphereGeometry.materials = [greenMaterial]
         sphereNode.position = SCNVector3(x: 1.0, y: 1.0, z: 1.0)
-        animationRadius3(sphereNode)
+        //animationRadius3(sphereNode)
         //animationPosition(sphereNode)
         return sphereNode
     }
