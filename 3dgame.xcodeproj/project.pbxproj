@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FDD145011E9906710023F71E /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD144FD1E9906710023F71E /* earth.png */; };
+		FDD145021E9906710023F71E /* germany_round_icon_640.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD144FE1E9906710023F71E /* germany_round_icon_640.png */; };
+		FDD145031E9906710023F71E /* italy_round_icon_640.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD144FF1E9906710023F71E /* italy_round_icon_640.png */; };
+		FDD145041E9906710023F71E /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD145001E9906710023F71E /* sun.png */; };
+		FDD145061E99073F0023F71E /* earth-topo.png in Resources */ = {isa = PBXBuildFile; fileRef = FDD145051E99073F0023F71E /* earth-topo.png */; };
 		FDDCA5D41E97A6900048CDAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDCA5D31E97A6900048CDAF /* AppDelegate.swift */; };
 		FDDCA5D61E97A6900048CDAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDCA5D51E97A6900048CDAF /* ViewController.swift */; };
 		FDDCA5D91E97A6900048CDAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDCA5D71E97A6900048CDAF /* Main.storyboard */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FDD144FD1E9906710023F71E /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth.png; sourceTree = "<group>"; };
+		FDD144FE1E9906710023F71E /* germany_round_icon_640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = germany_round_icon_640.png; sourceTree = "<group>"; };
+		FDD144FF1E9906710023F71E /* italy_round_icon_640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = italy_round_icon_640.png; sourceTree = "<group>"; };
+		FDD145001E9906710023F71E /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
+		FDD145051E99073F0023F71E /* earth-topo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "earth-topo.png"; sourceTree = "<group>"; };
 		FDDCA5D01E97A6900048CDAF /* 3dgame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3dgame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDCA5D31E97A6900048CDAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDDCA5D51E97A6900048CDAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +45,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FDD144FC1E9906710023F71E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FDD145051E99073F0023F71E /* earth-topo.png */,
+				FDD144FD1E9906710023F71E /* earth.png */,
+				FDD144FE1E9906710023F71E /* germany_round_icon_640.png */,
+				FDD144FF1E9906710023F71E /* italy_round_icon_640.png */,
+				FDD145001E9906710023F71E /* sun.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		FDDCA5C71E97A6900048CDAF = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +78,7 @@
 			children = (
 				FDDCA5D31E97A6900048CDAF /* AppDelegate.swift */,
 				FDDCA5D51E97A6900048CDAF /* ViewController.swift */,
+				FDD144FC1E9906710023F71E /* Images */,
 				FDDCA5D71E97A6900048CDAF /* Main.storyboard */,
 				FDDCA5DA1E97A6900048CDAF /* Assets.xcassets */,
 				FDDCA5DC1E97A6900048CDAF /* LaunchScreen.storyboard */,
@@ -123,8 +146,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD145011E9906710023F71E /* earth.png in Resources */,
+				FDD145041E9906710023F71E /* sun.png in Resources */,
 				FDDCA5DE1E97A6900048CDAF /* LaunchScreen.storyboard in Resources */,
+				FDD145021E9906710023F71E /* germany_round_icon_640.png in Resources */,
+				FDD145061E99073F0023F71E /* earth-topo.png in Resources */,
 				FDDCA5DB1E97A6900048CDAF /* Assets.xcassets in Resources */,
+				FDD145031E9906710023F71E /* italy_round_icon_640.png in Resources */,
 				FDDCA5D91E97A6900048CDAF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +327,7 @@
 				FDDCA5E41E97A6900048CDAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

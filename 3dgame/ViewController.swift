@@ -121,26 +121,26 @@ class ViewController: UIViewController {
         node.addAnimation(animation, forKey: "radius")
     }
 
-    func animationPosition(_ node: SCNNode) {
-        let animation = CABasicAnimation(keyPath: "geometry.position")
-        animation.fromValue = [0.0, 0.0]
-        animation.toValue = [2.0, 2.0]
-        animation.duration = 4.0
-        animation.autoreverses = true
-        animation.repeatCount = .infinity
-        node.addAnimation(animation, forKey: "position")
-    }
+//    func animationPosition(_ node: SCNNode) {
+//        let animation = CABasicAnimation(keyPath: "transform.scale.x")
+//        animation.fromValue = 0.0
+//        animation.toValue = 10.0
+//        animation.duration = 10.0
+//        animation.autoreverses = true
+//        animation.repeatCount = .infinity
+//        node.addAnimation(animation, forKey: "position")
+//    }
 
-    func animationColor(_ node: SCNNode) {
-        let animation = CABasicAnimation(keyPath: "backgroundColor")
-        animation.fromValue = UIColor.red
-        animation.toValue = UIColor.blue
-        animation.duration = 2.0
-        animation.autoreverses = true
-        animation.repeatCount = .infinity
-        node.addAnimation(animation, forKey: "color")
-
-    }
+//    func animationColor(_ node: SCNNode) {
+//        let animation = CABasicAnimation(keyPath: "backgroundColor")
+//        animation.fromValue = UIColor.red
+//        animation.toValue = UIColor.blue
+//        animation.duration = 2.0
+//        animation.autoreverses = true
+//        animation.repeatCount = .infinity
+//        node.addAnimation(animation, forKey: "color")
+//
+//    }
     
     func createCamera() -> SCNNode {
         
@@ -199,12 +199,12 @@ class ViewController: UIViewController {
         let sphereGeometry = SCNSphere(radius: 0.5)
         let sphereNode = SCNNode(geometry: sphereGeometry)
         let redMaterial = SCNMaterial()
-        redMaterial.diffuse.contents = UIColor.red
+        redMaterial.diffuse.contents = UIImage(named: "earth-topo.png")
         sphereGeometry.materials = [redMaterial]
         sphereNode.position = SCNVector3(x: -1.0, y: 1.0, z: 1.0)
         animationRadius(sphereNode)
-        animationPosition(sphereNode)
-        animationColor(sphereNode)
+        //animationPosition(sphereNode)
+     //   animationColor(sphereNode)
                return sphereNode
     }
     
@@ -212,10 +212,10 @@ class ViewController: UIViewController {
         let sphereGeometry = SCNSphere(radius: 0.5)
         let sphereNode = SCNNode(geometry: sphereGeometry)
         let yellowMaterial = SCNMaterial()
-        yellowMaterial.diffuse.contents = UIColor.yellow
+        yellowMaterial.diffuse.contents = UIImage(named: "germany_round_icon_640.png")
         sphereGeometry.materials = [yellowMaterial]
         animationRadius2(sphereNode)
-        animationPosition(sphereNode)
+        //animationPosition(sphereNode)
         return sphereNode
     }
     
@@ -223,11 +223,11 @@ class ViewController: UIViewController {
         let sphereGeometry = SCNSphere(radius: 0.5)
         let sphereNode = SCNNode(geometry: sphereGeometry)
         let greenMaterial = SCNMaterial()
-        greenMaterial.diffuse.contents = UIColor.green
+        greenMaterial.diffuse.contents = UIImage(named: "italy_round_icon_640.png")
         sphereGeometry.materials = [greenMaterial]
         sphereNode.position = SCNVector3(x: 1.0, y: 1.0, z: 1.0)
         animationRadius3(sphereNode)
-        animationPosition(sphereNode)
+        //animationPosition(sphereNode)
         return sphereNode
     }
 
